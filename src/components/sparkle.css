@@ -1,0 +1,23 @@
+.sparkle {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.461), 0 0 10px rgba(255, 255, 255, 0.6);
+    animation: sparkleAnimation 0.3s infinite alternate;
+    transform: translate(-50%, -50%); /* Center the sparkle on the cursor */
+  }
+  
+  @keyframes sparkleAnimation {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1.5);
+      opacity: 0.7;
+    }
+  }
